@@ -1,7 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         char[] a = {'a', 'z', ' ', 'в', 'G', 'Ж'};
-        System.out.println(cesar(a, 1));
+        System.out.println("Изначальный массив:");
+        System.out.println(a);
+        System.out.println("Новый массив:");
+        a = cesar(a, 10);
+        System.out.println(a);
+        System.out.println("И обратно:");
+        a = revCesar(a, 10);
+        System.out.println(a);
     }
 
     public static char[] cesar(char[] arr, int key) {
